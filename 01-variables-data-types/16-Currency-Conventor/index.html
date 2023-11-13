@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Currency conventer</title>
+    
+</head>
+<body>
+    <main id="conventer-window">
+    <h1>Currency conventer</h1>
+    <form name="conventer">
+        <input type="number" placeholder="Enter number" min="0" id="cash-input" onkeyup="convert()" onchange="convert()">
+        <span>BNG &#8594; </span>
+        <select onchange="convert()" id="currency-options">
+            <option selected disabled>Select currency</option>
+            <option  value="eur">EUR</option>
+            <option  value="usd">USD</option>
+            <option  value="gbp">GBP</option>
+        </select>
+        <br />
+        <input type="text" name="result" id="result" disabled>
+    </form>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
